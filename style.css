@@ -1,0 +1,62 @@
+.yellow-circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: yellow;
+  animation: movement 5s linear infinite;
+  position: fixed;
+}
+
+.yellow-circle:hover {
+  opacity: 0;
+}
+
+@keyframes movement {
+  0%,
+  100% {
+    transform: rotate(0deg);
+    left: 0;
+    bottom: 0;
+  }
+  25% {
+    transform: rotate(5turn);
+    left: calc(100vw - 150px);
+    bottom: 0;
+  }
+  50% {
+    transform: rotate(10turn);
+    bottom: calc(100vh - 150px);
+    left: calc(100vw - 150px);
+  }
+  75% {
+    transform: rotate(15turn);
+    bottom: calc(100vh - 150px);
+    left: 0;
+  }
+}
+
+.loading {
+  width: 80%;
+  height: 30px;
+  background-color: #f29191;
+  border-radius: 20px;
+  margin: 50px auto;
+  overflow: hidden;
+}
+
+.loading span {
+  background-color: green;
+  display: block;
+  width: 0%;
+  height: 30px;
+  animation: fill 2s linear;
+}
+
+@keyframes fill {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
