@@ -36,20 +36,19 @@
 }
 
 .loading {
-  width: 80%;
-  height: 30px;
-  background-color: #f29191;
-  border-radius: 20px;
-  margin: 50px auto;
+  width: 200px;
+  height: 80px;
+  margin: 50% auto;
   overflow: hidden;
+  border: 2px red solid;
 }
 
 .loading span {
-  background-color: green;
+  background-color: rgb(255, 0, 0);
   display: block;
   width: 0%;
-  height: 30px;
-  animation: fill 2s linear;
+  height: 100%;
+  animation: fill 5s linear infinite;
 }
 
 @keyframes fill {
